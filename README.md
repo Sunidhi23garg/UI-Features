@@ -2,10 +2,14 @@ A responsive feature showcase component built with React that provides an intera
 
 ## Installation
 - Clone or download the project files
-- Install dependencies: npm install
-
+- Install dependencies:
+``bash
+npm install
+``
 - Running the Project
-Start the development server: npm start
+``bash
+npm start
+``
 
 Start the development server at http://localhost:3000.
 
@@ -24,4 +28,4 @@ FeatureShowcase -The main component that displays the feature showcase with:
 - Responsive layout
 
 ## Deployment
-Deployed URL: [Add your Vercel[
+Deployed URL: [[Add your Vercel[](https://ui-features.vercel.app/)
