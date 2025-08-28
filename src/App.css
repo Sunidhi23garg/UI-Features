@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px;
+  gap: 30px;
+  flex-wrap: wrap; 
+  /* border: 2px solid black; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.showcase-left {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+  flex: 1;
+  min-width: 280px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.showcase-right {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  flex: 1;
+  min-width: 280px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.showcase-left,.showcase-right,.showcase-phone {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+}
+
+.showcase-phone {
+  width: 300px;
+  height: 600px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  margin: 0 auto;
+  flex-shrink: 0; 
 }
 
-.App-link {
-  color: #61dafb;
+.showcase-phone img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  /* border: 2px solid black; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.feature-title {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.feature-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.feature-desc {
+  color: #555;
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.arrows button {
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.showcase-right h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.feature-item {
+  padding: 8px 12px;
+  border-left: 4px solid transparent;
+  color: #666;
+  cursor: pointer;
+}
+
+.feature-item.active {
+  border-left: 4px solid #007bff;
+  font-weight: bold;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .showcase {
+    padding: 30px 20px;
+    gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .showcase-left,
+  .showcase-right {
+    padding: 40px 20px;
+  }
+  .showcase-phone {
+    width: 240px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .showcase-left,
+  .showcase-right {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .showcase-phone {
+    width: 220px;
+    height: 440px;
+    margin: 20px auto;
+  }
+  .arrows {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-phone {
+    width: 180px;
+    height: 360px;
+  }
+  .feature-heading {
+    font-size: 18px;
   }
 }
