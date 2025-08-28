@@ -2,16 +2,10 @@ A responsive feature showcase component built with React that provides an intera
 
 ## Installation
 - Clone or download the project files
-- Install dependencies:
-`` bash
-npm install
-`` 
+- Install dependencies: npm install
 
 - Running the Project
-Start the development server:
-`` bash
-npm start
-``
+Start the development server: npm start
 
 Start the development server at http://localhost:3000.
 
